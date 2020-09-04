@@ -1,0 +1,108 @@
+// todo Normalize CSS
+@import '../vendors/normalize';
+
+@mixin font($font_name, $file_name, $weight, $style) {
+
+	// ! Mixin for fonts
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"),
+		url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import './fonts';
+@import './_variables';
+@import './_mixins';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css';
+@import '../vendors/owl.carousel.min';
+@import './header';
+@import './services';
+@import './works';
+@import './news';
+@import './footer';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+}
+
+header, nav, footer, main, aside, article, section{
+	display: block;
+}
+
+html {
+	font-size: 10px;
+}
+
+body{
+	background-color: #ffffff;
+	font-family: $mainFont, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.container{
+	max-width: 90vw;
+	margin: 0 auto;
+	padding: 0 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 3rem 0 5rem;
+}
+
+.title{
+	width: 70vw;
+	text-align: center;
+	font-size: 3.2rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 3rem;
+}
+
+.divider{
+	width: 5rem;
+	height: 0.2rem;
+	background-color: $mainColor;
+	margin-bottom: 3rem;
+	border-color: $mainColor;
+	outline: none;
+}
+
+.description{
+	width: 70vw;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2.6rem;
+	margin-bottom: 3rem;
+	color: #AFAFAF;
+}
+
+.btn{
+	padding: 1rem 1rem;
+	background-color: $mainColor;
+	color: #ffffff;
+	font-size: 1.6rem;
+	transition: all .3s;
+	margin-bottom: 3rem;
+	&:hover{
+		background-color: rgba($mainColor, .8);
+	}
+}

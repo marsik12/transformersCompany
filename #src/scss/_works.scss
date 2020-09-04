@@ -1,0 +1,75 @@
+.works__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 5rem;
+	margin-bottom: 3rem;
+	box-sizing: border-box;
+	@media (min-width: 320px) and (max-width: 575px) {
+		padding: 0;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		padding: 0;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		
+	}
+	@media (min-width: 1200px) {
+		
+	}
+}
+.works__item {
+	width: 33.3333333%;
+	position: relative;
+	display: inline-block;
+	@media (min-width: 320px) and (max-width: 575px) {
+		width: 100%;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		width: 100%;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		
+	}
+	@media (min-width: 1200px) {
+		
+	}
+}
+.works__img {
+	width: 100%;
+	object-fit: cover;
+}
+.works__info-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all .3s ease-out;
+	opacity: 0;
+}
+
+.works__item:hover .works__info-block{
+	opacity: 1;
+}
+
+.plus {
+	font-size: 5rem;
+	font-weight: 700;
+}
+.work__name {
+	font-size: 2rem;
+}
