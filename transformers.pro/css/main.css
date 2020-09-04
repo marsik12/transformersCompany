@@ -698,8 +698,32 @@ template {
   display: none;
 }
 
-.hamburger__item {
+.hamburger__item1,
+.hamburger__item2,
+.hamburger__item3 {
   display: none;
+}
+
+/* Rotate first bar */
+
+.change .hamburger__item1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+
+.change .hamburger__item2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+
+.change .hamburger__item3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -ms-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .navigation__wrapper {
@@ -836,6 +860,68 @@ template {
   margin-right: 2rem;
 }
 
+.dots__wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #F4B214;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#services {
+  scroll-behavior: smooth;
+}
+
 .services__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,6 +969,17 @@ template {
       -ms-transform: scale(1.05);
           transform: scale(1.05);
   border-bottom: 1rem solid #F4B214;
+}
+
+.services__item-icon {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services__item-icon img {
+  width: 12.8rem;
 }
 
 .services__item-title {
@@ -1317,7 +1414,9 @@ h6 {
     display: none;
   }
 
-  .hamburger__item {
+  .hamburger__item1,
+  .hamburger__item2,
+  .hamburger__item3 {
     display: none;
   }
 
@@ -1340,18 +1439,26 @@ h6 {
   }
 
   .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .hamburger__item1,
+  .hamburger__item2,
+  .hamburger__item3 {
+    width: 3.5rem;
+    height: 0.5rem;
+    background-color: #F4B214;
+    margin-bottom: .6rem;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     display: block;
   }
 
-  .hamburger__item {
-    width: 4rem;
-    height: 0.4rem;
-    background-color: #000;
-    margin-bottom: .8rem;
-    display: block;
-  }
-
-  .hamburger__item:last-child {
+  .hamburger__item1:last-child,
+  .hamburger__item2:last-child,
+  .hamburger__item3:last-child {
     margin-bottom: 0;
   }
 
@@ -1444,7 +1551,27 @@ h6 {
   }
 
   .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .hamburger__item1,
+  .hamburger__item2,
+  .hamburger__item3 {
+    width: 3.5rem;
+    height: 0.5rem;
+    background-color: #F4B214;
+    margin-bottom: .6rem;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     display: block;
+  }
+
+  .hamburger__item1:last-child,
+  .hamburger__item2:last-child,
+  .hamburger__item3:last-child {
+    margin-bottom: 0;
   }
 
   .navigation {
@@ -1539,7 +1666,9 @@ h6 {
     display: none;
   }
 
-  .hamburger__item {
+  .hamburger__item1,
+  .hamburger__item2,
+  .hamburger__item3 {
     display: none;
   }
 
@@ -1565,7 +1694,9 @@ h6 {
     display: none;
   }
 
-  .hamburger__item {
+  .hamburger__item1,
+  .hamburger__item2,
+  .hamburger__item3 {
     display: none;
   }
 

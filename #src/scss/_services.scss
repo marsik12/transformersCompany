@@ -38,6 +38,13 @@
 	}
 }
 .services__item-icon {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	img{
+		width: 12.8rem;
+	}
+	margin-bottom: 3rem;
 }
 .services__item-title {
 	font-size: 2rem;

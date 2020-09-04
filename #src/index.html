@@ -29,14 +29,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
 	<link rel="manifest" href="./favicons/site.webmanifest">
 
-	<!-- ! Other  -->
-	<!-- <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
-	<link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-	<link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
-
-
 	<!-- todo Main CSS File -->
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -54,11 +46,11 @@
 			<div class="header__container">
 				<div class="main__header-wrapper">
 					<a class="logo" href="#">Brend nomi</a>
-					<div class="hamburger">
-						<span class="hamburger__item"></span>
-						<span class="hamburger__item"></span>
-						<span class="hamburger__item"></span>
-					</div>
+					<a class="hamburger" href="javascript:void(0)" onclick="hamburger(this)">
+						<span class="hamburger__item1"></span>
+						<span class="hamburger__item2"></span>
+						<span class="hamburger__item3"></span>
+					</a>
 					<nav class="navigation header__navigation">
 						<ul class="navigation__wrapper">
 							<li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Bosh
@@ -85,7 +77,7 @@
 						voluptatibus</div>
 				</div>
 			</div>
-			<!-- <div class="slider__item fade" style="background: url('./img/slider-2.jpg');">
+			<div class="slider__item fade" style="background: url('./img/slider-2.jpg');">
 				<div class="slider__wrapper">
 					<div class="slider__title">Slayder sarlavhasi</div>
 					<div class="slider__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
@@ -93,16 +85,16 @@
 						quasi aliquam ut, blanditiis tenetur repellat fuga natus deleniti inventore laudantium ea neque
 						voluptatibus officiis laborum? Dolorum hic possimus unde.</div>
 				</div>
-			</div> -->
-			<!-- <div class="slider__item fade" style="background: url('./img/slider-1.jpg');">
+			</div>
+			<div class="slider__item fade" style="background: url('./img/slider-1.jpg');">
 				<div class="slider__wrapper">
 					<div class="slider__title">Slayder sarlavhasi</div>
 					<div class="slider__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
 						saepe
 						quasi aliquam ut, blanditiis tenetur repellat fuga natus deleniti inventore laudantium ea neque
 						voluptatibus officiis laborum? Dolorum hic possimus unde.</div>
-				</div> -->
-			<!-- </div> -->
+				</div>
+			</div>
 
 			<!-- todo Next and previous buttons -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -111,7 +103,7 @@
 		</div>
 
 		<!-- todo The dots/circles -->
-		<div style="text-align:center">
+		<div style="text-align:center" class="dots__wrapper">
 			<span class="dot" onclick="currentSlide(1)"></span>
 			<span class="dot" onclick="currentSlide(2)"></span>
 			<span class="dot" onclick="currentSlide(3)"></span>
@@ -130,19 +122,25 @@
 				illum aliquid.</p>
 			<div class="services__items">
 				<div class="services__item">
-					<div class="services__item-icon"></div>
+					<div class="services__item-icon">
+						<img src="./img/power.png" alt="Transformer">
+					</div>
 					<h4 class="services__item-title">Xizmat nomi</h4>
 					<p class="services__item-description">Lorem ipsum dolor sit amet consectetur</p>
 					<a class="services__item-btn" href="#">Batafsil ma'lumot</a>
 				</div>
 				<div class="services__item">
-					<div class="services__item-icon"></div>
+					<div class="services__item-icon">
+						<img src="./img/tower.png" alt="Tower">
+					</div>
 					<h4 class="services__item-title">Xizmat nomi</h4>
 					<p class="services__item-description">Lorem ipsum dolor sit amet consectetur</p>
 					<a class="services__item-btn" href="#">Batafsil ma'lumot</a>
 				</div>
 				<div class="services__item">
-					<div class="services__item-icon"></div>
+					<div class="services__item-icon">
+						<img src="./img/electricity.png" alt="Electricity">
+					</div>
 					<h4 class="services__item-title">Xizmat nomi</h4>
 					<p class="services__item-description">Lorem ipsum dolor sit amet consectetur</p>
 					<a class="services__item-btn" href="#">Batafsil ma'lumot</a>
@@ -285,18 +283,7 @@
 	</footer>
 	<!-- todo SECTION FOOTER END -->
 
-
-	<!-- loader -->
-	<!-- <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#f4b214" /></svg></div> -->
 	<script src="js/main.min.js"></script>
-	<!-- <script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script> -->
 </body>
 
 </html>
