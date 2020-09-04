@@ -166,8 +166,6 @@
 		}
 	}
 }
-.social__links {
-}
 .footer__social__title{
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -188,5 +186,19 @@
 		
 	}
 }
+.social__links-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .links__item {
+	display: block;
+	margin: 1rem 2rem 0 0;
+	&:last-child{
+		margin-right: 0;
+	}
+	img{
+		width: 32px;
+		height: 32px;
+	}
 }

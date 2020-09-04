@@ -685,6 +685,7 @@ template {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
@@ -790,9 +791,9 @@ template {
 
 .slider__item {
   height: 90vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .slider__wrapper {
@@ -1300,6 +1301,32 @@ template {
   margin-bottom: 0.7rem;
 }
 
+.social__links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links__item {
+  display: block;
+  margin: 1rem 2rem 0 0;
+}
+
+.links__item:last-child {
+  margin-right: 0;
+}
+
+.links__item img {
+  width: 32px;
+  height: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1466,6 +1493,14 @@ h6 {
     display: none;
   }
 
+  .navigation__wrapper {
+    font-size: 1.3rem;
+  }
+
+  .navigation__item {
+    margin-right: 1rem;
+  }
+
   .submitApplication__btn {
     display: none;
   }
@@ -1487,6 +1522,10 @@ h6 {
   .prev,
   .next {
     display: none;
+  }
+
+  .dots__wrapper {
+    bottom: -12%;
   }
 
   .services__item {
@@ -1551,8 +1590,7 @@ h6 {
   }
 
   .hamburger {
-    display: inline-block;
-    cursor: pointer;
+    display: none;
   }
 
   .hamburger__item1,
@@ -1575,11 +1613,24 @@ h6 {
   }
 
   .navigation {
-    display: none;
+    margin-top: 3rem;
+  }
+
+  .navigation__wrapper {
+    font-size: 1.36rem;
+  }
+
+  .navigation__item {
+    margin-right: 1rem;
   }
 
   .submitApplication__btn {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
   }
 
   .slider__title {
@@ -1599,6 +1650,10 @@ h6 {
   .prev,
   .next {
     display: none;
+  }
+
+  .dots__wrapper {
+    bottom: -40%;
   }
 
   .services__item {
@@ -1673,11 +1728,14 @@ h6 {
   }
 
   .navigation {
-    display: block;
+    margin-top: 5rem;
   }
 
   .submitApplication__btn {
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -1687,7 +1745,7 @@ h6 {
   }
 
   .logo {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .hamburger {
@@ -1704,7 +1762,16 @@ h6 {
     display: block;
   }
 
+  .navigation__wrapper {
+    font-size: 1.5rem;
+  }
+
+  .navigation__item {
+    margin-right: 1rem;
+  }
+
   .submitApplication__btn {
     display: block;
+    padding: .6rem 1rem;
   }
 }
