@@ -8,7 +8,8 @@ let path = {
 		js: project_folder + "/js/",
 		img: project_folder + "/img/",
 		fonts: project_folder + "/fonts/",
-		favicons: project_folder + "/favicons/"
+		favicons: project_folder + "/favicons/",
+		vendors: project_folder + "/vendors/"
 	},
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -16,7 +17,8 @@ let path = {
 		js: source_folder + "/js/main.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,ico,webp,gif}",
 		fonts: source_folder + "/fonts/*.ttf",
-		favicons: source_folder + "/favicons/*.{png,svg,ico,xml,webmanifest}"
+		favicons: source_folder + "/favicons/*.{png,svg,ico,xml,webmanifest}",
+		vendors: source_folder + "/vendors/*.{css,js}"
 	},
 	watch: {
 		html: source_folder + "/**/*.html",
@@ -124,7 +126,7 @@ function images() {
 				progressive: true,
 				svgoPlugins: [{
 					removeViewBox: false,
-				}, ],
+				},],
 				interlaced: true,
 				optimizationLevel: 3, // 0 to 7
 			})
@@ -149,6 +151,12 @@ function fonts() {
 gulp.task('favicons', function () {
 	return src(path.src.favicons)
 		.pipe(dest(path.build.favicons));
+});
+
+// todo Vendors Function
+gulp.task('vendors', function () {
+	return src(path.src.vendors)
+		.pipe(dest(path.build.vendors));
 });
 
 gulp.task("otf2ttf", function () {
@@ -197,7 +205,7 @@ function fontsStyle(params) {
 	}
 }
 
-function cb() {}
+function cb() { }
 
 // ! Watching Files
 function watchFiles() {

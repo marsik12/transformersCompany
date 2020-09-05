@@ -7,6 +7,7 @@
 .main__header {
 	padding: 2.5rem 0;
 	box-sizing: border-box;
+	background-color: #fff;
 	@media (min-width: 320px) and (max-width: 575px) {
 		padding: 1.5rem 0;
 	}
@@ -34,7 +35,7 @@
 	display: inline-block;
 	font-size: 2rem;
 	text-transform: uppercase;
-	color: #000000;
+	color: #000;
 	@media (min-width: 320px) and (max-width: 575px) {
 		font-size: 2.5rem;
 	}

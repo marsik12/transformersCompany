@@ -32,8 +32,11 @@
 }
 .copyright {
 	font-size: 1.4rem;
-	color: #AFAFAF;
 	margin-top: 3rem;
+	a{
+		color: #000000;
+		font-weight: 700;
+	}
 }
 .company__informations {
 	display: flex;
@@ -197,8 +200,11 @@
 	&:last-child{
 		margin-right: 0;
 	}
-	img{
-		width: 32px;
-		height: 32px;
+	i{
+		color: #AFAFAF;
+		transition: all .3s;
+		&:hover{
+			color: $mainColor;
+		}
 	}
 }
