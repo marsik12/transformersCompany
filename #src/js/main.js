@@ -57,5 +57,3 @@ function myFunction() {
 		x.style.display = "block";
 	}
 }
-
-// @@include '../vendors/owl.carousel.min.js';
