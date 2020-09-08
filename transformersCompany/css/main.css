@@ -5448,30 +5448,77 @@ template {
 }
 
 .form__label {
+  display: block;
   color: #afafaf;
   font-size: 2rem;
-}
-
-.fullname {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: .5rem;
 }
 
 .form__input {
-  width: 20rem;
+  width: 50%;
   height: 4rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border: none;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
 }
 
-.btn {
-  display: block;
+.form__input:hover {
+  border-bottom-color: #F4B214;
+}
+
+.form__textarea {
+  width: 95%;
+  height: 20rem;
+  resize: vertical;
+  margin-bottom: 1.5rem;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  font-style: italic;
+}
+
+.form__textarea:hover {
+  border-color: #F4B214;
+}
+
+.form__btn {
+  outline: none;
+  border: none;
+  width: 20rem;
+  cursor: pointer;
 }
 
 .contact__info {
   width: 30%;
+}
+
+.contact__info-item {
+  margin-bottom: 3rem;
+}
+
+.contact__info-title {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.contact__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -5863,6 +5910,27 @@ h6 {
     margin: 0 0 1rem;
   }
 
+  .contact__form {
+    width: 100%;
+  }
+
+  .form__label {
+    font-size: 1.6rem;
+  }
+
+  .form__input {
+    height: 2.5rem;
+    width: 95%;
+  }
+
+  .form__textarea {
+    height: 12rem;
+  }
+
+  .contact__info {
+    width: 100%;
+  }
+
   .footer__item {
     width: 100%;
     margin-bottom: 3rem;
@@ -5996,6 +6064,27 @@ h6 {
   .news__item {
     width: 100%;
     margin: 0 0 1rem;
+  }
+
+  .contact__form {
+    width: 60%;
+  }
+
+  .form__label {
+    font-size: 1.6rem;
+  }
+
+  .form__input {
+    height: 2.5rem;
+    width: 95%;
+  }
+
+  .form__textarea {
+    height: 12rem;
+  }
+
+  .contact__info {
+    width: 40%;
   }
 
   .footer__item {
