@@ -426,3 +426,140 @@
 #services{
 	scroll-behavior: smooth;
 }
+
+
+// Modal Window
+.header__modal {
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 10rem;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, .4);
+}
+.modal__content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: .1rem solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+.close {
+	color: #000;
+	float: right;
+	padding: 0;
+	margin-top: -.7rem;
+	font-size: 3rem;
+	font-weight: bold;
+	transition: all .3s;
+	&:hover, &:focus{
+		color: $mainColor;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+.modal__header {
+	padding: 1.5rem;
+	background-color: $mainColor;
+}
+
+.modal__title {
+	font-size: 2rem;
+	color: #000;
+}
+.modal__body {
+	padding: 3rem;
+	width: 100%;
+}
+
+.modal__description {
+	padding-bottom: 1.5rem;
+	font-size: 1.6rem;
+	color: #000;
+	padding-left: 1rem;
+}
+.modal__form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.modal__input {
+	width: 48%;
+	display: inline-block;
+	outline: none;
+	margin-bottom: 3rem;
+	font-size: 1.4rem;
+	padding: 1rem 2rem;
+	border: none;
+	border-bottom: .1rem solid rgba(0, 0, 0, .3);
+	border-radius: .3rem;
+	transition: all .3s;
+	&:nth-child(odd){
+		margin-right: 2rem;
+	}
+	&:hover, &:checked{
+		border-bottom: .1rem solid $mainColor;
+	}
+	@media (min-width: 320px) and (max-width: 575px) {
+		&:nth-child(odd) {
+			margin-right: 1%;
+		}
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		&:nth-child(odd) {
+			margin-right: 0;
+			padding-right: 2rem;
+			box-sizing: border-box;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		
+	}
+	@media (min-width: 1200px) {
+		
+	}
+}
+.modal__textarea {
+	display: inline-block;
+	width: 100%;
+	margin: 0 1rem;
+	padding: 1rem 2rem;
+	border: .1rem solid rgba(0, 0, 0, .3);
+	min-height: 15rem;
+	margin-bottom: 1rem;
+	border-radius: .3rem;
+	resize: vertical;
+	font-size: 1.4rem;
+	transition: all .3s;
+	&:hover{
+		border-color: $mainColor;
+	}
+}
+.modal__btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}

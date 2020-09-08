@@ -1,0 +1,38 @@
+.contact__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 5rem 0;
+}
+.contact__form {
+	width: 70%;
+}
+.form__label {
+	color: #afafaf;
+	font-size: 2rem;
+}
+.fullname {
+	display: flex;
+	justify-content: center;
+}
+.form__input {
+	width: 20rem;
+	height: 4rem;
+}
+.form__textarea {
+}
+.btn {
+	display: block;
+}
+.form__btn {
+}
+.contact__info {
+	width: 30%;
+}
+.contact__info-item {
+}
+.contact__info-title {
+}
+.company__address {
+}
