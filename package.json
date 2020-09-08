@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/marsik12/bouncy.com#readme",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",

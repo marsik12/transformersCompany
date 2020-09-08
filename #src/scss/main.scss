@@ -17,7 +17,8 @@
 
 @import './fonts';
 @import './_variables';
-// @import './_mixins';
+@import './_mixins';
+@import '../../node_modules/animate.css/animate.min';
 @import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @import './header';
 @import './services';
